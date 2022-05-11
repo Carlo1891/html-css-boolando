@@ -1,0 +1,88 @@
+/* Resect bordi e parti comuni */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+/* Header in movimento */
+
+.top-bar.move{
+    background-color: rgb(255, 93, 1);
+}
+
+.top-bar .content{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .pick-type,
+.menu .client-profile{
+    justify-content: center;
+    display: flex;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+/* Main con shopping */
+
+main{
+    padding-top: 127px;
+}
+
+#container{
+    width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.item{
+    width: 300px;
+    position: relative;
+    display: inline-block;
+}
+
+.item > img{
+    width: 100%
+}
+
+.item > .discount{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+/* Footer con informazioni */
+
+.bottom-bar.stay{
+    background-color: lightgray;
+}
+
+.bottom-bar .content{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
