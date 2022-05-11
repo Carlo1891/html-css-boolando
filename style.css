@@ -4,26 +4,53 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul{
+    display: flex;
 }
 
 li{
     list-style: none;
 }
+
 /* Header in movimento */
 
-/* header{
+#profile{
+    background-image: url(./img/user-solid.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+}
+
+#whishlist{
+    background-image: url(./img/heart-solid.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+}
+
+#shopcart{
+    background-image: url(./img/bag-shopping-solid.svg);
+    background-repeat: no-repeat;
+    height: 20px;
+}
+
+header{
     position: fixed;
     z-index: 1;
+    width: 100%;
 }
-*/
+
+.top-bar .move{
+    width: 100%;
+}
 
 .top-bar.move{
     background-color: rgb(255, 93, 1);
 }
 
 .top-bar .content{
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -34,27 +61,34 @@ li{
 .menu .client-profile{
     justify-content: center;
     display: flex;
+
+}
+
+.logo img{
+    height: 60px;
 }
 
 .menu ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 5px 10px;
     display: inline-block;
 }
 
 /* Main con shopping */
 
-#container{
-    width: 1000px;
-    margin: 100px auto;
+.container{
+    width: 1300px;
+    margin: 0 auto 50px auto;
     text-align: center;
+    padding-top: 100px;
 }
 
 .item{
-    width: 300px;
+    width: 400px;
     position: relative;
     display: inline-block;
+    margin: 15px;
 }
 
 .item > img{
@@ -78,7 +112,8 @@ li{
     left: 40px;
     background-color: greenyellow;
 }
-.item > #no-discount{
+
+.item > .no-discount{
     position: absolute;
     width: 100px;
     height: 20px;
@@ -86,7 +121,6 @@ li{
     left: 0;
     background-color: greenyellow;
 }
-
 
 .heart{
     position: absolute;
@@ -102,19 +136,51 @@ li{
     display: block;
 }
 
-
 /* Footer con informazioni */
 
 .bottom-bar.stay{
-    background-color: lightgray;
+    background-color: rgb(87, 82, 82);
+    color: white;
 }
 
 .bottom-bar .content{
-    max-width: 1000px;
+    max-width: 1300px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.menu{
+    padding: 20px 0 20px 0;
+}
 
+#twitter{
+    background-image: url(./img/twitter-square-brands.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+#facebook{
+    background-image: url(./img/facebook-brands.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+#instagram{
+    background-image: url(./img/instagram-brands.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+#pinterest{
+    background-image: url(./img/pinterest-brands.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+}
+
+#youtube{
+    background-image: url(./img/youtube-square-brands.svg);
+    background-repeat: no-repeat;
+    height: 25px;
+}
