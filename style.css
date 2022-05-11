@@ -12,6 +12,12 @@ li{
 }
 /* Header in movimento */
 
+/* header{
+    position: fixed;
+    z-index: 1;
+}
+*/
+
 .top-bar.move{
     background-color: rgb(255, 93, 1);
 }
@@ -39,13 +45,9 @@ li{
 
 /* Main con shopping */
 
-main{
-    padding-top: 127px;
-}
-
 #container{
     width: 1000px;
-    margin: auto;
+    margin: 100px auto;
     text-align: center;
 }
 
@@ -62,12 +64,42 @@ main{
 .item > .discount{
     position: absolute;
     width: 40px;
-    height: 40px;
-    top: 0;
+    height: 20px;
+    bottom: 10px;
+    left: 0;
+    background-color: red;
+}
+
+.item > .label{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 10px;
+    left: 40px;
+    background-color: greenyellow;
+}
+.item > #no-discount{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    bottom: 10px;
+    left: 0;
+    background-color: greenyellow;
+}
+
+
+.heart{
+    position: absolute;
     right: 0;
-    border-radius: 20px;
-    text-align: center;
-    line-height: 40px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    display: none;
+    background-color: white;
+}
+
+.item:hover .heart{
+    display: block;
 }
 
 
