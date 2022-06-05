@@ -1,128 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boolando</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<!-- Esercizio 8 -->
-<body>
-    <!-- Header sito mobile con fixed -->
-    <header>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Boolando</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b7d1dc2de3.js" crossorigin="anonymous"></script>
+    </head>
+    <!-- Esercizio 8 -->
+    <body>
+        <!-- Header sito mobile con fixed -->
+        <header>
+            <nav class="container">
+                <ul class="main-menu">
 
-        <div class="top-bar move">
-            <div class="content">
-                <nav class="menu pick-type">
-                    <ul>
-                        <li><a href="#">Donna</a></li>
-                        <li><a href="#">Uomo</a></li>
-                        <li><a href="#">Bambino</a></li>
-                    </ul>
-                </nav>
-                <div class="logo">
-                    <img src="./img/boolean-logo.png" alt="boolean logo">
-                </div>
-                <nav class="menu pick-profile">
-                    <ul>
-                        <li>
-                            <a href="#"><i class="fa-regular fa-user"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-regular fa-heart"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa-regular fa-bag-shopping"></i></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+                    <li><a href="#">Donna</a></li>
+                    <li><a href="#">Uomo</a></li>
+                    <li><a href="#">Bambini</a></li>
 
-    </header>
-    <!-- Riquadro shopping -->
-    <main>
+                </ul>
+                <a href="#"><img src="./img/boolean-logo.png" alt="logo" class="logo"></a>
+                <ul class="user-menu">
+
+                    <li>
+                        <a href=""><i class="fa-regular fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-regular fa-heart"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </header>
         
-        <div class="container">
+        <main>
+            <!-- Immagini vestiti e sconti -->
+            <div class="container flex-wrap">
+                <div class="card">
+                    <div class="card-image">
 
-            <div class="item">
-                <div class="item-image">
-                    <img src="./img/1.webp" alt="photo male 1">
-                    <span class="discount">-50%</span>
-                    <span class="label">Sostenibilità</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
-            
-            <div class="item">
-                <div class="item-image">
-                    <img src="./img/2.webp" alt="photo female 1">
-                    <span class="discount">-30%</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
+                        <img src="./img/1.webp" alt="maschio1" class="main-image">
+                        <img src="./img/1b.webp" alt="maschio2" class="secondary-image">
+                        <div class="favourite">&hearts;</div>
 
-            <div class="item">
-                <div class="item-image">
-                    <img src="./img/3.webp" alt="photo female 2">
-                    <span class="discount">-30%</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
+                        <div class="card-badges">
+                            <span class="badge badge-discount">-50%</span>
+                            <span class="badge badge-tag">Sostenibilit&agrave;</span>
+                        </div>
 
-            <div class="item">
-                <div class="item-image">
-                    <img src="./img/4.webp" alt="photo male 2">
-                    <span class="discount">-50%</span>
-                    <span class="label">Sostenibilità</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
+                    </div>
+                    <div class="card-text">
 
-    
-            <div class="item">
-                <div class="item-image">
-                    <img src="./img/5.webp" alt="photo female 3">
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
-    
-            <div class="item">
-                <div class="item-image">
-                    <img src="./img/6.webp" alt="photo female 4">
-                    <span class="no-discount" class="label">Sostenibilità</span>
-                    <div class="heart">&hearts;</div>
-                </div>
-            </div>
-        </div>
+                        <span class="article-brand">Levi's</span>
+                        <h3 class="article-name">RELAXED FIT TEE UNISEX</h3>
+                        <strong class="article-price">14,99 &euro; </strong><del>29,99 &euro;</del>
 
-    </main>
-    <!-- Informazioni sito e social -->
-    <footer>
+                    </div>
+                </div>
 
-        <div class="bottom-bar stay">
-            <div class="content">
-                <div class="menu info">Boolando s.r.l.
-                    <ul>
+                <div class="card">
+                    <div class="card-image">
+
+                        <img src="./img/2.webp" alt="donna1" class="main-image">
+                        <img src="./img/2b.webp" alt="donna2" class="secondary-image">
+                        <div class="favourite">&hearts;</div>
+
+                        <div class="card-badges">
+                            <span class="badge badge-discount">-30%</span>
+                        </div>
+
+                    </div>
+                    <div class="card-text">
+
+                        <span class="article-brand">Guess</span>
+                        <h3 class="article-name">ROSES TEE</h3>
+                        <strong class="article-price">20,99 &euro; </strong><del>29,99 &euro;</del>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+
+                        <img src="./img/3.webp" alt="donna3" class="main-image">
+                        <img src="./img/3b.webp" alt="donna4" class="secondary-image">
+                        <div class="favourite">&hearts;</div>
+
+                        <div class="card-badges">
+                            <span class="badge badge-discount">-50%</span>
+                        </div>
+
+                    </div>
+                    <div class="card-text">
+
+                        <span class="article-brand">Come Zucchero Filato</span>
+                        <h3 class="article-name">VOGLIA DI COLORI PASTELLO</h3>
+                        <strong class="article-price">129,99 &euro; </strong><del>184,99 &euro;</del>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+
+                        <img src="./img/4.webp" alt="maschio3" class="main-image">
+                        <img src="./img/4b.webp" alt="maschio4" class="secondary-image">
+                        <div class="favourite">&hearts;</div>
+
+                        <div class="card-badges">
+                            <span class="badge badge-discount">-50%</span>
+                            <span class="badge badge-tag">Sostenibilit&agrave;</span>
+                        </div>
+
+                    </div>
+                    <div class="card-text">
+
+                        <span class="article-brand">Levi's</span>
+                        <h3 class="article-name">TEE UNISEX</h3>
+                        <strong class="article-price">14,99 &euro; </strong><del>29,99 &euro;</del>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+
+                        <img src="./img/5.webp" alt="donna5" class="main-image">
+                        <img src="./img/5b.webp" alt="donna6" class="secondary-image">
+                        <div class="favourite">&hearts;</div>
+
+                        <div class="card-badges">
+                            <span class="badge badge-discount">-50%</span>
+                        </div>
+
+                    </div>
+                    <div class="card-text">
+
+                        <span class="article-brand">Maya Deluxe</span>
+                        <h3 class="article-name">STRIPE BODICE</h3>
+                        <strong class="article-price">99,99 &euro; </strong>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image">
+
+                        <img src="./img/6.webp" alt="donna7" class="main-image">
+                        <img src="./img/6b.webp" alt="donna8" class="secondary-image">
+                        <div class="favourite">&hearts;</div>
+
+                        <div class="card-badges">
+                            <span class="badge badge-tag">Sostenibilit&agrave;</span>
+                        </div>
+
+                    </div>
+                    <div class="card-text">
+
+                        <span class="article-brand">Esprit</span>
+                        <h3 class="article-name">MAGLIONE - BLACK</h3>
+                        <strong class="article-price">14,99 &euro; </strong>
+
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+        <footer>
+            <div class="container">
+
+                <div>
+
+                    <h4>Boolando s.r.l.</h4>
+                    <ul class="footer-menu">
+
                         <li><a href="#">Informazioni legali</a></li>
-                        <li><a href="#">Informativa privacy</a></li>
+                        <li><a href="#">Normativa sulla privacy</a></li>
                         <li><a href="#">Diritto di recesso</a></li>
+
                     </ul>
+
                 </div>
-                <div class="menu social"> Trovaci anche su
-                    <ul>
-                        <li><a class="twitter" href="#"></a></li>
-                        <li><a class="facebook" href="#"></a></li>
-                        <li><a class="instagram" href=""></a></li>
-                        <li><a class="pinterest" href="#"></a></li>
-                        <li><a class="youtube" href="#"></a></li>
+
+                <div>
+
+                    <h5>Trovaci anche su</h5>
+                    <ul class="social-networks">
+
+                        <li> 
+                            <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        </li>
+
+                        <li> 
+                            <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                        </li>
+
+                        <li> 
+                            <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                        </li>
+
+                        <li> 
+                            <a href="#"><i class="fa-brands fa-pinterest-square"></i></a>
+                        </li>
+
+                        <li> 
+                            <a href="#"><i class="fa-brands fa-youtube-square"></i></a>
+                        </li>
+
                     </ul>
+
                 </div>
+
             </div>
-        </div>
+        </footer>
 
-    </footer>
-
-</body>
+    </body>
 </html>
